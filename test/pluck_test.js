@@ -11,4 +11,7 @@ describe('pluck', () => {
   it('returns an array', () => {
     expect(pluck()).to.eql([])
   })
+  it("given [{foo: 'bar'}], 'foo' returns ['bar']", () => {
+    expect(pluck([{foo: 'bar'}])).to.eql(['bar'])
+  })
 })
