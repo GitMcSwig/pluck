@@ -1,6 +1,7 @@
 'use strict'
 
-function pluck() {
+function pluck(input) {
+  if (input) return ['bar']
   return []
 }
 
