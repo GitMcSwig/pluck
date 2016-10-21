@@ -1,10 +1,9 @@
 'use strict'
 
 function pluck(inputArr, property) {
-  if (inputArr) {
-    return [ inputArr[0][property] ]
-  }
-  return []
+  return inputArr.map( (obj) => {
+    return obj[property]
+  })
 }
 
 module.exports = pluck
