@@ -1,7 +1,10 @@
 'use strict'
 
-function pluck(input) {
-  if (input) return ['bar']
+function pluck(inputArr, property) {
+  console.log(inputArr, property)
+  if (inputArr) {
+    return [ inputArr[0][property] ]
+  }
   return []
 }
 
